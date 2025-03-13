@@ -1,0 +1,728 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 18px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1c1a1a;
+    color: #ffd700;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 18px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1c1a1a;
+    color: #ffd700;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+nav {
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    flex-wrap: wrap; /* Prevents breaking layout on small screens */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.5);
+    background-color: rgba(255, 215, 0, 0.2);
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px; /* Restrict width for better readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffd700;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a1a1a;
+    color: #ffd700;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden initially */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #ffd700;
+    color: #1a1a1a;
+    transform: scale(1.1);
+}
+.logo {
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 15px #00f) drop-shadow(0 0 30px #00f); /* Blue glow */
+    transform: scale(1.1);
+}
+
+.slide-tab .short-text {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
+                 0 0 16px rgba(255, 255, 255, 0.6), 
+                 0 0 24px rgba(255, 255, 255, 0.4);
+    transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Intense Glow & Scale */
+.slide-tab:hover .short-text {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 1), 
+                 0 0 24px rgba(255, 255, 255, 0.9), 
+                 0 0 36px rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+/* Pulsing Animation */
+@keyframes pulseGlow {
+    0% { text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 255, 255, 0.6); }
+    50% { text-shadow: 0 0 12px rgba(255, 255, 255, 1), 0 0 24px rgba(255, 255, 255, 0.8); }
+    100% { text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 255, 255, 0.6); }
+}
+
+/* Apply Animation */
+.slide-tab .short-text {
+    animation: pulseGlow 2s infinite alternate ease-in-out;
+}
+
+/* Core Layout & Structure */
+body {
+    background: #050a14;
+    color: black;
+    font-family: "Amazon Ember", Helvetica, Arial, sans-serif;
+}
+
+.main {
+    background-color: #050a14;
+    color: black;
+}
+
+/* FAQ Container and Layout */
+.faq-container {
+    display: flex;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto 60px;
+    padding: 40px 20px;
+    font-family: "Amazon Ember", Helvetica, Arial, sans-serif;
+}
+
+/* Image Section */
+.faq-image-section {
+    flex: 0 0 45%;
+    position: sticky;
+    top: 40px;
+    align-self: flex-start;
+}
+
+.faq-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Content Section */
+.faq-content-section {
+    flex: 0 0 55%;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+/* Custom Scrollbar */
+.faq-content-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.faq-content-section::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 4px;
+}
+
+.faq-content-section::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
+}
+
+/* Title and Underline */
+.faq-title {
+    color: #C28B5A;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: #ffa64d;
+    margin-bottom: 30px;
+}
+
+/* FAQ List and Items */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: linear-gradient(135deg, #2c2c2c, #1f1f1f);
+    border-radius: 12px;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+    scroll-margin-top: 20px;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Question Styling */
+.faq-question {
+    display: block;
+    padding: 20px 25px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.faq-question:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffa64d;
+    transition: transform 0.3s ease;
+}
+
+/* Answer Styling */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    background-color: #1a1a1a;
+    border-radius: 0 0 12px 12px;
+}
+
+.faq-item:target .faq-answer {
+    max-height: 1000px;
+}
+
+.faq-answer-content {
+    padding: 20px 25px;
+    color: #e0e0e0;
+    font-size: 15px;
+    line-height: 1.6;
+    border-top: 1px solid #444;
+}
+
+/* Header Animations */
+.airwolf-header {
+    margin: 0 auto;
+    background-color: rgb(35,47,62);
+    position: relative;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+}
+
+.airwolf-header::after {
+    z-index: 1;
+    box-shadow: 0 0 240px 240px rgba(0,0,0,.5);
+    content: '';
+    background: red;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.airwolf-header-title {
+    z-index: 2;
+    font-family: "Amazon Ember", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 10px rgba(255, 153, 0, 0.8),
+        0 0 20px rgba(255, 153, 0, 0.6),
+        0 0 30px rgba(255, 153, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.airwolf-header-title:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    text-shadow: 
+        0 0 15px rgba(255, 153, 0, 1),
+        0 0 30px rgba(255, 153, 0, 0.8),
+        0 0 45px rgba(255, 153, 0, 0.6);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #2c2c2c, #1f1f1f);
+    color: #ffa64d;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 1px solid #444;
+    font-weight: 500;
+}
+
+.back-to-top:hover {
+    background: linear-gradient(135deg, #333333, #2a2a2a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #ff8c1a;
+}
+
+.center {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Content Styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #ac7c50 !important;
+}
+
+a {
+    color: #a0cace !important;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff8c1a !important;
+    text-decoration: none;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: transparent;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+th {
+    background-color: #2a2a2a;
+    color: #ffa64d;
+    font-weight: 600;
+}
+
+/* Button Styles */
+.btn, 
+button {
+    background: linear-gradient(135deg, #2c2c2c, #1f1f1f);
+    color: #ffa64d;
+    border: 1px solid #444;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:hover, 
+button:hover {
+    background: linear-gradient(135deg, #333333, #2a2a2a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-image-section {
+        flex: 0 0 100%;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        position: static;
+    }
+
+    .faq-content-section {
+        flex: 0 0 100%;
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
+    }
+
+    .faq-title {
+        text-align: center;
+    }
+
+    .underline {
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .faq-image-section {
+        max-width: 100%;
+    }
+
+    .faq-title {
+        font-size: 28px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+
+    .faq-answer-content {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+
+    .airwolf-header-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .faq-title {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        padding: 12px 15px;
+        padding-right: 40px;
+    }
+
+    .faq-answer-content {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+
+    .airwolf-header-title {
+        font-size: 28px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .faq-container {
+        display: block;
+    }
+
+    .faq-image-section {
+        display: none;
+    }
+
+    .faq-content-section {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .faq-answer {
+        max-height: none !important;
+    }
+
+    .faq-question::after {
+        display: none;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+}
+
+/* Hide XWiki Elements but keep View/Edit Source */
+#xwikimaincontainer {
+    background: #050a14 !important;
+}
+
+/* Hide Header Elements */
+#xwikiplatformhtmlheader,
+#headerbar,
+#xwikimainmenu,
+#xwikititle {
+    display: none !important;
+}
+
+/* Hide Navigation Elements */
+#leftPanels,
+#rightPanels,
+.xwikitabpanescontainer,
+#hierarchy {
+    display: none !important;
+}
+
+/* Hide Footer Elements */
+#xwikicontentfooter,
+#xdocFooter,
+#xwikifooter,
+#footerglobal,
+.xdocLastModification,
+.xdocTags,
+#xwikidata {
+    display: none !important;
+}
+
+/* Hide specific edit buttons but keep View/Edit Source */
+.edit-mode,
+.edit-button,
+#editbutton,
+#tmCreate,
+#tmMoreActions,
+.heading-edit-button,
+.edit-section,
+.permalink {
+    display: none !important;
+}
+
+/* Hide Breadcrumbs */
+.breadcrumb,
+#hierarchy {
+    display: none !important;
+}
+
+/* Hide Comments Section */
+#xwikicomments,
+.comments {
+    display: none !important;
+}
+
+/* Hide Document Information */
+.doc-info,
+.modification-info,
+.document-info {
+    display: none !important;
+}
+
+
+/* Adjust Main Content Area */
+#xwikicontent {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+#body {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh !important;
+}
+
+/* Remove XWiki Borders and Backgrounds */
+.main {
+    border: none !important;
+    box-shadow: none !important;
+    background: #050a14 !important;
+}
+
+/* Force Full Width */
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+/* Remove Any Remaining XWiki Margins and Padding */
+#mainContentArea {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide Action Menus */
+.dropdown-menu,
+.action-menu {
+    display: none !important;
+}
+
+/* Hide Version Control Elements */
+.version-control,
+.revision-info {
+    display: none !important;
+}
+
+/* Remove Default XWiki Styling */
+body.xwiki {
+    background: #050a14 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ensure Content is Visible */
+#xwikicontent {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hide Edit Section, Edit Section Source and Permalink */
+.heading-edit-button,
+.edit-section,
+.edit-section-source,
+.permalink {
+    display: none !important;
+}
+
+/* Additional selectors to ensure complete removal */
+a[href*="edit"],
+a[href*="section"],
+.section-edit,
+.section-actions,
+.heading-actions {
+    display: none !important;
+}
+
+/* Hide the entire action container if present */
+.document-actions,
+.section-actions-container,
+.heading-container .actions {
+    display: none !important;
+}
+
